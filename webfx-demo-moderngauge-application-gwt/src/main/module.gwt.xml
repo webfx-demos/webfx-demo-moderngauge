@@ -11,6 +11,7 @@
     <!-- used by webfx-kit-javafxcontrols-emul (SOURCE) -->
     <!-- used by webfx-kit-javafxgraphics-emul (SOURCE) -->
     <!-- used by webfx-kit-javafxgraphics-peers (SOURCE) -->
+    <!-- used by webfx-lib-medusa (SOURCE) -->
     <source path="com/sun/javafx"/>
     <source path="com/sun/javafx/binding"/>
     <source path="com/sun/javafx/collections"/>
@@ -24,8 +25,8 @@
     <source path="javafx/event"/>
     <source path="javafx/util"/>
     <!--=========================< webfx-kit-javafxcontrols-emul >==========================-->
-    <!-- used by webfx-demo-moderngauge-application (SOURCE) -->
     <!-- used by webfx-kit-javafxcontrols-registry-gwt (SOURCE) -->
+    <!-- used by webfx-lib-medusa (SOURCE) -->
     <source path="com/sun/javafx/scene/control"/>
     <source path="com/sun/javafx/scene/control/behavior"/>
     <source path="com/sun/javafx/scene/control/skin"/>
@@ -35,7 +36,6 @@
     <public includes="images/checkbox/" path=""/>
     <!--=========================< webfx-kit-javafxgraphics-emul >==========================-->
     <!-- used by webfx-kit-javafxcontrols-emul (SOURCE) -->
-    <!-- used by webfx-demo-moderngauge-application (SOURCE) -->
     <!-- used by webfx-kit-gwt (SOURCE) -->
     <!-- used by webfx-kit-javafxgraphics-peers (SOURCE) -->
     <source path="com/sun/javafx/application"/>
@@ -101,10 +101,6 @@
     <!-- used by webfx-kit-javafxgraphics-peers-base (SOURCE) -->
     <!--=======================< webfx-demo-moderngauge-application >=======================-->
     <!-- used by webfx-demo-moderngauge-application-gwt (APPLICATION) -->
-    <source path="eu/hansolo/medusa"/>
-    <source path="eu/hansolo/medusa/events"/>
-    <source path="eu/hansolo/medusa/skins"/>
-    <source path="eu/hansolo/medusa/tools"/>
     <source path="webfx/demo/moderngauge"/>
     <!--=================================< webfx-kit-gwt >==================================-->
     <!-- used by webfx-demo-moderngauge-application-gwt (IMPLICIT_PROVIDER) -->
@@ -149,6 +145,12 @@
     <!-- used by webfx-kit-javafxgraphics-emul (SOURCE) -->
     <source path="webfx/kit/util/properties"/>
     <source path="webfx/kit/util/properties/conversion"/>
+    <!--================================< webfx-lib-medusa >================================-->
+    <!-- used by webfx-demo-moderngauge-application (SOURCE) -->
+    <source path="eu/hansolo/medusa"/>
+    <source path="eu/hansolo/medusa/events"/>
+    <source path="eu/hansolo/medusa/skins"/>
+    <source path="eu/hansolo/medusa/tools"/>
     <!--=======================< webfx-platform-client-uischeduler >========================-->
     <!-- used by webfx-kit-javafxgraphics-emul (SOURCE) -->
     <!-- used by webfx-platform-gwt-uischeduler-impl (SOURCE) -->

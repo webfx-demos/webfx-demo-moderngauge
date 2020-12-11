@@ -3,18 +3,12 @@
 module webfx.demo.moderngauge.application {
 
     // Direct dependencies modules
-    requires java.base;
-    requires javafx.base;
     requires javafx.controls;
     requires javafx.graphics;
+    requires webfx.lib.medusa;
     requires webfx.platform.shared.scheduler;
-    requires webfx.platform.shared.util;
 
     // Exported packages
-    exports eu.hansolo.medusa;
-    exports eu.hansolo.medusa.events;
-    exports eu.hansolo.medusa.skins;
-    exports eu.hansolo.medusa.tools;
     exports webfx.demo.moderngauge;
 
     // Provided services

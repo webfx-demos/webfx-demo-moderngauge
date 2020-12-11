@@ -1,5 +1,13 @@
 <module>
 
+    <dependencies>
+
+        <source-modules>
+            <module>webfx-kit-javafxcontrols-emul</module>
+        </source-modules>
+
+    </dependencies>
+
     <providers>
         <provider spi="javafx.application.Application">webfx.demo.moderngauge.ModernGaugeApplication</provider>
     </providers>
