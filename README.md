@@ -18,7 +18,7 @@ This is an example of how you can benefit from the JavaFx ecosystem and reuse or
 
 This demo also shows that it's possible to write your own control with the JavaFx API and implement one or even several skins for the same control. 
 
-[demo-live-link]: https://webfx-moderngauge-demo.netlify.app
+[demo-live-link]: https://moderngauge.webfx-project.org
 [demo-source-link]: https://github.com/webfx-project/webfx-demo-moderngauge/blob/main/webfx-demo-moderngauge-application/src/main/java/webfx/demo/moderngauge/ModernGaugeApplication.java
 [previous-demo-repo-link]: https://github.com/webfx-project/webfx-demo-tallycounter
 [hansolo-medusa-link]: https://github.com/HanSolo/Medusa
