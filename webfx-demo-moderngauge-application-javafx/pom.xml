@@ -51,7 +51,7 @@
     <properties>
         <plugin.javapackager.name>ModernGauge</plugin.javapackager.name>
         <plugin.javapackager.displayName>Modern Gauge</plugin.javapackager.displayName>
-        <plugin.javapackager.url>https://webfx-moderngauge-demo.netlify.app</plugin.javapackager.url>
+        <plugin.javapackager.url>https://moderngauge.webfx-project.org</plugin.javapackager.url>
     </properties>
 
     <build>
