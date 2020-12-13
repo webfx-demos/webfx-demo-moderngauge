@@ -1,4 +1,4 @@
-package webfx.demo.moderngauge;
+package dev.webfx.demo.moderngauge;
 
 import eu.hansolo.medusa.Gauge;
 import eu.hansolo.medusa.GaugeBuilder;
@@ -11,7 +11,7 @@ import javafx.scene.layout.CornerRadii;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-import webfx.platform.shared.services.scheduler.Scheduler;
+import dev.webfx.platform.shared.services.scheduler.Scheduler;
 
 /**
  * @author Bruno Salmon

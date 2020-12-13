@@ -9,9 +9,9 @@ module webfx.demo.moderngauge.application {
     requires webfx.platform.shared.scheduler;
 
     // Exported packages
-    exports webfx.demo.moderngauge;
+    exports dev.webfx.demo.moderngauge;
 
     // Provided services
-    provides javafx.application.Application with webfx.demo.moderngauge.ModernGaugeApplication;
+    provides javafx.application.Application with dev.webfx.demo.moderngauge.ModernGaugeApplication;
 
 }

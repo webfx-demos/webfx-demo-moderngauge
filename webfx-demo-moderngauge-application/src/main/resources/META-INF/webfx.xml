@@ -9,7 +9,7 @@
     </dependencies>
 
     <providers>
-        <provider spi="javafx.application.Application">webfx.demo.moderngauge.ModernGaugeApplication</provider>
+        <provider spi="javafx.application.Application">dev.webfx.demo.moderngauge.ModernGaugeApplication</provider>
     </providers>
 
 </module>
