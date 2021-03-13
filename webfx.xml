@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<module>
+
+    <modules>
+        <module>webfx-demo-moderngauge-application</module>
+        <module>webfx-demo-moderngauge-application-javafx</module>
+        <module>webfx-demo-moderngauge-application-gwt</module>
+        <module>webfx-demo-moderngauge-application-gluon</module>
+    </modules>
+
+</module>
+
