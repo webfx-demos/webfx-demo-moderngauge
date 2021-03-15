@@ -6,7 +6,7 @@
     </packages>
 
     <providers>
-        <provider spi="javafx.application.Application">dev.webfx.demo.moderngauge.ModernGaugeApplication</provider>
+        <javafx.application.Application>dev.webfx.demo.moderngauge.ModernGaugeApplication</javafx.application.Application>
     </providers>
 
     <dependencies>
