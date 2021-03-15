@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<module>
+<project>
 
     <modules>
         <module>webfx-demo-moderngauge-application</module>
@@ -8,5 +8,5 @@
         <module>webfx-demo-moderngauge-application-gluon</module>
     </modules>
 
-</module>
+</project>
 
