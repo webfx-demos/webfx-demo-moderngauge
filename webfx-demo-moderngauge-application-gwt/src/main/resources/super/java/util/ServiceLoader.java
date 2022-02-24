@@ -13,9 +13,9 @@ public class ServiceLoader<S> implements Iterable<S> {
             case "dev.webfx.kit.mapper.spi.WebFxKitMapperProvider": return new ServiceLoader<S>(dev.webfx.kit.mapper.spi.gwt.GwtWebFxKitHtmlMapperProvider::new);
             case "dev.webfx.platform.client.services.uischeduler.spi.UiSchedulerProvider": return new ServiceLoader<S>(dev.webfx.platform.gwt.services.uischeduler.spi.impl.GwtUiSchedulerProvider::new);
             case "dev.webfx.platform.gwt.services.resource.spi.impl.GwtResourceBundle": return new ServiceLoader<S>();
-            case "dev.webfx.platform.shared.services.appcontainer.spi.ApplicationContainerProvider": return new ServiceLoader<S>(dev.webfx.platform.gwt.services.appcontainer.spi.impl.GwtApplicationContainerProvider::new);
-            case "dev.webfx.platform.shared.services.appcontainer.spi.ApplicationJob": return new ServiceLoader<S>();
-            case "dev.webfx.platform.shared.services.appcontainer.spi.ApplicationModuleInitializer": return new ServiceLoader<S>(dev.webfx.kit.launcher.WebFxKitLauncherModuleInitializer::new, dev.webfx.platform.shared.services.appcontainer.spi.impl.ApplicationJobsStarter::new, dev.webfx.platform.gwt.services.resource.spi.impl.GwtResourceModuleInitializer::new);
+            case "dev.webfx.platform.shared.services.boot.spi.ApplicationBooterProvider": return new ServiceLoader<S>(dev.webfx.platform.gwt.services.boot.spi.impl.GwtApplicationBooterProvider::new);
+            case "dev.webfx.platform.shared.services.boot.spi.ApplicationJob": return new ServiceLoader<S>();
+            case "dev.webfx.platform.shared.services.boot.spi.ApplicationModuleBooter": return new ServiceLoader<S>(dev.webfx.kit.launcher.WebFxKitLauncherModuleBooter::new, dev.webfx.platform.shared.services.boot.spi.impl.ApplicationJobsBooter::new, dev.webfx.platform.gwt.services.resource.spi.impl.GwtResourceModuleBooter::new);
             case "dev.webfx.platform.shared.services.log.spi.LoggerProvider": return new ServiceLoader<S>(dev.webfx.platform.gwt.services.log.spi.impl.GwtLoggerProvider::new);
             case "dev.webfx.platform.shared.services.resource.spi.ResourceServiceProvider": return new ServiceLoader<S>(dev.webfx.platform.gwt.services.resource.spi.impl.GwtResourceServiceProvider::new);
             case "dev.webfx.platform.shared.services.scheduler.spi.SchedulerProvider": return new ServiceLoader<S>(dev.webfx.platform.gwt.services.uischeduler.spi.impl.GwtUiSchedulerProvider::new);
