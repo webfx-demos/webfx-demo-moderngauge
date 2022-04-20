@@ -9,8 +9,8 @@
         <group>
             <groupId>dev.webfx</groupId>
             <version>0.1.0-SNAPSHOT</version>
-            <library name="webfx"/>
-            <library name="webfx-lib-medusa"/>
+            <webfx-library name="webfx"/>
+            <webfx-library name="webfx-lib-medusa"/>
         </group>
     </required-libraries>
 
