@@ -13,6 +13,8 @@
 
     <artifactId>webfx-demo-moderngauge-application-gluon</artifactId>
 
+    <name>WebFXDemoModerngauge</name>
+
     <dependencies>
 
         <dependency>

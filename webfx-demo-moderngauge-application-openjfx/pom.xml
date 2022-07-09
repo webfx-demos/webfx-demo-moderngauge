@@ -54,8 +54,8 @@
     </dependencies>
 
     <properties>
-        <plugin.javapackager.name>webfx-demo-moderngauge</plugin.javapackager.name>
-        <plugin.javapackager.displayName>webfx-demo-moderngauge</plugin.javapackager.displayName>
+        <plugin.javapackager.name>WebFXDemoModerngauge</plugin.javapackager.name>
+        <plugin.javapackager.displayName>WebFX Demo Moderngauge</plugin.javapackager.displayName>
         <plugin.javapackager.url/>
     </properties>
 
