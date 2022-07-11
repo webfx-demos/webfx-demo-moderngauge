@@ -6,7 +6,7 @@
     </exported-packages>
 
     <providers>
-        <javafx.application.Application>dev.webfx.demo.moderngauge.ModernGaugeApplication</javafx.application.Application>
+        <provider interface="javafx.application.Application">dev.webfx.demo.moderngauge.ModernGaugeApplication</provider>
     </providers>
 
     <dependencies>

@@ -10,9 +10,6 @@
 
     <!-- Speeding up GWT compilation time in development mode -->
     <!--===========================< webfx-kit-javafxbase-emul >============================-->
-    <!-- used by webfx-kit-javafxcontrols-emul (SOURCE) -->
-    <!-- used by webfx-kit-javafxgraphics-emul (SOURCE) -->
-    <!-- used by webfx-lib-medusa (SOURCE) -->
     <source path="com/sun/javafx"/>
     <source path="com/sun/javafx/binding"/>
     <source path="com/sun/javafx/collections"/>
@@ -26,8 +23,6 @@
     <source path="javafx/event"/>
     <source path="javafx/util"/>
     <!--=========================< webfx-kit-javafxcontrols-emul >==========================-->
-    <!-- used by webfx-kit-javafxcontrols-registry-gwt (SOURCE) -->
-    <!-- used by webfx-lib-medusa (SOURCE) -->
     <source path="com/sun/javafx/scene/control"/>
     <source path="com/sun/javafx/scene/control/behavior"/>
     <source path="com/sun/javafx/scene/control/skin"/>
@@ -36,9 +31,6 @@
     <resource path="images/checkbox"/>
     <public includes="images/checkbox/" path=""/>
     <!--=========================< webfx-kit-javafxgraphics-emul >==========================-->
-    <!-- used by webfx-kit-javafxcontrols-emul (SOURCE) -->
-    <!-- used by webfx-kit-gwt (SOURCE) -->
-    <!-- used by webfx-kit-javafxgraphics-registry-gwt (SOURCE) -->
     <source path="com/sun/javafx/application"/>
     <source path="com/sun/javafx/cursor"/>
     <source path="com/sun/javafx/geom"/>
@@ -74,131 +66,81 @@
     <source path="javafx/scene/transform"/>
     <source path="javafx/stage"/>
     <!--=================================< elemental2-dom >=================================-->
-    <!-- used by webfx-kit-gwt (SOURCE) -->
-    <!-- used by webfx-kit-javafxcontrols-peers-gwt (SOURCE) -->
-    <!-- used by webfx-kit-javafxgraphics-peers-gwt (SOURCE) -->
-    <!-- used by webfx-platform-gwt-shutdown-impl (SOURCE) -->
-    <!-- used by webfx-platform-gwt-uischeduler-impl (SOURCE) -->
     <inherits name="elemental2.dom.Dom"/>
     <!--=================================< elemental2-svg >=================================-->
-    <!-- used by webfx-kit-javafxgraphics-peers-gwt (SOURCE) -->
     <inherits name="elemental2.svg.Svg"/>
     <!--====================================< gwt-user >====================================-->
-    <!-- used by webfx-kit-javafxgraphics-peers-gwt (SOURCE) -->
-    <!-- used by webfx-platform-gwt-boot-impl (SOURCE) -->
-    <!-- used by webfx-platform-gwt-emul-javabase (SOURCE) -->
-    <!-- used by webfx-platform-gwt-resource-impl (SOURCE) -->
-    <!-- used by webfx-platform-gwt-uischeduler-impl (SOURCE) -->
     <inherits name="com.google.gwt.user.User"/>
     <!--=================================< java-nio-emul >==================================-->
-    <!-- used by webfx-kit-javafxgraphics-emul (SOURCE) -->
     <inherits name="org.gwtproject.nio.GwtNioSupport"/>
     <!--=======================< webfx-demo-moderngauge-application >=======================-->
-    <!-- used by webfx-demo-moderngauge-application-gwt (APPLICATION) -->
     <source path="dev/webfx/demo/moderngauge"/>
     <!--=================================< webfx-kit-gwt >==================================-->
-    <!-- used by webfx-demo-moderngauge-application-gwt (IMPLICIT_PROVIDER) -->
-    <!-- used by webfx-demo-moderngauge-application-gwt (EMULATION) -->
     <source path="dev/webfx/kit/launcher/spi/gwt"/>
     <source path="dev/webfx/kit/mapper/spi/gwt"/>
     <!--======================< webfx-kit-javafxcontrols-peers-base >=======================-->
-    <!-- used by webfx-kit-javafxcontrols-peers-gwt (SOURCE) -->
     <source path="dev/webfx/kit/mapper/peers/javafxcontrols/base"/>
     <!--=======================< webfx-kit-javafxcontrols-peers-gwt >=======================-->
-    <!-- used by webfx-kit-javafxcontrols-registry-gwt (SOURCE) -->
     <source path="dev/webfx/kit/mapper/peers/javafxcontrols/gwt/html"/>
     <!--=====================< webfx-kit-javafxcontrols-registry-gwt >======================-->
-    <!-- used by webfx-demo-moderngauge-application-gwt (IMPLICIT_PROVIDER) -->
     <source path="dev/webfx/kit/registry/javafxcontrols"/>
     <!--=========================< webfx-kit-javafxgraphics-peers >=========================-->
-    <!-- used by webfx-kit-javafxgraphics-emul (SOURCE) -->
     <source path="dev/webfx/kit/mapper/peers/javafxgraphics"/>
     <source path="dev/webfx/kit/mapper/peers/javafxgraphics/markers"/>
     <!--======================< webfx-kit-javafxgraphics-peers-base >=======================-->
-    <!-- used by webfx-kit-javafxcontrols-peers-base (SOURCE) -->
-    <!-- used by webfx-kit-javafxgraphics-peers-gwt (SOURCE) -->
     <source path="dev/webfx/kit/mapper/peers/javafxgraphics/base"/>
     <!--=======================< webfx-kit-javafxgraphics-peers-gwt >=======================-->
-    <!-- used by webfx-kit-gwt (SOURCE) -->
-    <!-- used by webfx-kit-javafxcontrols-peers-gwt (SOURCE) -->
-    <!-- used by webfx-kit-javafxgraphics-registry-gwt (SOURCE) -->
     <source path="dev/webfx/kit/mapper/peers/javafxgraphics/gwt/html"/>
     <source path="dev/webfx/kit/mapper/peers/javafxgraphics/gwt/html/layoutmeasurable"/>
     <source path="dev/webfx/kit/mapper/peers/javafxgraphics/gwt/shared"/>
     <source path="dev/webfx/kit/mapper/peers/javafxgraphics/gwt/svg"/>
     <source path="dev/webfx/kit/mapper/peers/javafxgraphics/gwt/util"/>
     <!--=====================< webfx-kit-javafxgraphics-registry-gwt >======================-->
-    <!-- used by webfx-demo-moderngauge-application-gwt (IMPLICIT_PROVIDER) -->
     <source path="dev/webfx/kit/registry/javafxgraphics"/>
     <!--===============================< webfx-kit-launcher >===============================-->
-    <!-- used by webfx-kit-javafxgraphics-emul (SOURCE) -->
     <source path="dev/webfx/kit/launcher"/>
     <source path="dev/webfx/kit/launcher/spi"/>
     <source path="dev/webfx/kit/launcher/spi/base"/>
     <!--=================================< webfx-kit-util >=================================-->
-    <!-- used by webfx-kit-javafxgraphics-emul (SOURCE) -->
     <source path="dev/webfx/kit/util/properties"/>
     <source path="dev/webfx/kit/util/properties/conversion"/>
     <!--================================< webfx-lib-medusa >================================-->
-    <!-- used by webfx-demo-moderngauge-application (SOURCE) -->
     <source path="eu/hansolo/medusa"/>
     <source path="eu/hansolo/medusa/events"/>
     <source path="eu/hansolo/medusa/skins"/>
     <source path="eu/hansolo/medusa/tools"/>
     <!--=======================< webfx-platform-client-uischeduler >========================-->
-    <!-- used by webfx-kit-launcher (SOURCE) -->
-    <!-- used by webfx-platform-gwt-uischeduler-impl (SOURCE) -->
     <source path="dev/webfx/platform/client/services/uischeduler"/>
     <source path="dev/webfx/platform/client/services/uischeduler/spi"/>
     <source path="dev/webfx/platform/client/services/uischeduler/spi/impl"/>
     <!--==========================< webfx-platform-gwt-boot-impl >==========================-->
-    <!-- used by webfx-demo-moderngauge-application-gwt (IMPLICIT_PROVIDER) -->
     <source path="dev/webfx/platform/gwt/services/boot/spi/impl"/>
     <!--==========================< webfx-platform-gwt-log-impl >===========================-->
-    <!-- used by webfx-demo-moderngauge-application-gwt (IMPLICIT_PROVIDER) -->
     <source path="dev/webfx/platform/gwt/services/log/spi/impl"/>
     <!--========================< webfx-platform-gwt-resource-impl >========================-->
-    <!-- used by webfx-demo-moderngauge-application-gwt (IMPLICIT_PROVIDER) -->
     <source path="dev/webfx/platform/gwt/services/resource/spi/impl"/>
     <!--========================< webfx-platform-gwt-shutdown-impl >========================-->
-    <!-- used by webfx-demo-moderngauge-application-gwt (IMPLICIT_PROVIDER) -->
     <source path="dev/webfx/platform/gwt/services/shutdown/spi/impl"/>
     <!--======================< webfx-platform-gwt-uischeduler-impl >=======================-->
-    <!-- used by webfx-demo-moderngauge-application-gwt (IMPLICIT_PROVIDER) -->
     <source path="dev/webfx/platform/gwt/services/uischeduler/spi/impl"/>
     <!--===========================< webfx-platform-shared-boot >===========================-->
-    <!-- used by webfx-kit-launcher (SOURCE) -->
-    <!-- used by webfx-platform-gwt-boot-impl (SOURCE) -->
-    <!-- used by webfx-platform-gwt-resource-impl (SOURCE) -->
     <source path="dev/webfx/platform/shared/services/boot"/>
     <source path="dev/webfx/platform/shared/services/boot/spi"/>
     <source path="dev/webfx/platform/shared/services/boot/spi/impl"/>
     <!--===========================< webfx-platform-shared-log >============================-->
-    <!-- used by webfx-platform-gwt-log-impl (SOURCE) -->
-    <!-- used by webfx-platform-gwt-uischeduler-impl (SOURCE) -->
-    <!-- used by webfx-platform-shared-boot (SOURCE) -->
     <source path="dev/webfx/platform/shared/services/log"/>
     <source path="dev/webfx/platform/shared/services/log/spi"/>
     <!--=========================< webfx-platform-shared-resource >=========================-->
-    <!-- used by webfx-kit-javafxgraphics-peers-gwt (SOURCE) -->
-    <!-- used by webfx-platform-gwt-resource-impl (SOURCE) -->
     <source path="dev/webfx/platform/shared/services/resource"/>
     <source path="dev/webfx/platform/shared/services/resource/spi"/>
     <!--========================< webfx-platform-shared-scheduler >=========================-->
-    <!-- used by webfx-platform-client-uischeduler (SOURCE) -->
     <source path="dev/webfx/platform/shared/services/scheduler"/>
     <source path="dev/webfx/platform/shared/services/scheduler/spi"/>
     <!--=========================< webfx-platform-shared-shutdown >=========================-->
-    <!-- used by webfx-platform-gwt-shutdown-impl (SOURCE) -->
-    <!-- used by webfx-platform-shared-boot (SOURCE) -->
     <source path="dev/webfx/platform/shared/services/shutdown"/>
     <source path="dev/webfx/platform/shared/services/shutdown/spi"/>
     <source path="dev/webfx/platform/shared/services/shutdown/spi/impl"/>
     <!--===========================< webfx-platform-shared-util >===========================-->
-    <!-- used by webfx-kit-javafxgraphics-peers (SOURCE) -->
-    <!-- used by webfx-platform-shared-log (SOURCE) -->
-    <!-- used by webfx-platform-shared-scheduler (SOURCE) -->
-    <!-- used by webfx-platform-shared-shutdown (SOURCE) -->
     <source path="dev/webfx/platform/shared/util"/>
     <source path="dev/webfx/platform/shared/util/collection"/>
     <source path="dev/webfx/platform/shared/util/function"/>
