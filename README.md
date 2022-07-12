@@ -11,12 +11,12 @@ Here is the [source code][demo-source-link].
 
 ## Reusability
 
-The gauge control was actually already implemented in a JavaFx called [Medusa][hansolo-medusa-link].
-This is an example of how you can benefit from the JavaFx ecosystem and reuse or port existing JavaFx libraries in your WebFx applications.
+The gauge control was actually already implemented in a JavaFX called [Medusa][hansolo-medusa-link].
+This is an example of how you can benefit from the JavaFX ecosystem and reuse or port existing JavaFX libraries in your WebFX applications.
 
 ## Custom control
 
-This demo also shows that it's possible to write your own control with the JavaFx API and implement one or even several skins for the same control. 
+This demo also shows that it's possible to write your own control with the JavaFX API and implement one or even several skins for the same control. 
 
 [demo-live-link]: https://moderngauge.webfx.dev
 [demo-source-link]: https://github.com/webfx-project/webfx-demo-moderngauge/blob/main/webfx-demo-moderngauge-application/src/main/java/dev/webfx/demo/moderngauge/ModernGaugeApplication.java
