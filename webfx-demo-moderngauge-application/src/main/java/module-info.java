@@ -6,7 +6,7 @@ module webfx.demo.moderngauge.application {
     requires javafx.controls;
     requires javafx.graphics;
     requires webfx.lib.medusa;
-    requires webfx.platform.shared.scheduler;
+    requires webfx.platform.scheduler;
 
     // Exported packages
     exports dev.webfx.demo.moderngauge;

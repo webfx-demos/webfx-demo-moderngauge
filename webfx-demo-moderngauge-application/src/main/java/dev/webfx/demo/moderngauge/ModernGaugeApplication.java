@@ -11,7 +11,7 @@ import javafx.scene.layout.CornerRadii;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-import dev.webfx.platform.shared.services.scheduler.Scheduler;
+import dev.webfx.platform.scheduler.Scheduler;
 
 /**
  * @author Bruno Salmon
