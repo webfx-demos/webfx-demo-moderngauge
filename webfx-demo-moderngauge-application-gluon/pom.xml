@@ -72,8 +72,8 @@
                         <list>storage</list>
                     </attachList>
                     <resourcesList>
-                        <list>dev/webfx/platform/meta/exe/[^/]+</list>
-                        <list>images/checkbox/[^/]+</list>
+                        <list>dev/webfx/platform/meta/exe/[^/]+$</list>
+                        <list>images/checkbox/[^/]+$</list>
                     </resourcesList>
                     <releaseConfiguration>
                         <!-- Android -->
