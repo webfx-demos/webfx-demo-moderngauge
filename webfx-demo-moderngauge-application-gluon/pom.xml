@@ -75,10 +75,12 @@
                         <list>dev/webfx/platform/meta/exe/[^/]+$</list>
                         <list>images/checkbox/[^/]+$</list>
                     </resourcesList>
+                    <appIdentifier>dev.webfx.demo.moderngauge</appIdentifier>
                     <releaseConfiguration>
                         <!-- Android -->
                         <appLabel>Modern gauge</appLabel>
                     </releaseConfiguration>
+
                 </configuration>
             </plugin>
         </plugins>

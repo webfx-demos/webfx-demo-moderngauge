@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project applicationLabel="Modern gauge">
+<project applicationId="dev.webfx.demo.moderngauge" applicationLabel="Modern gauge">
 
     <exported-packages>
         <source-packages/>
