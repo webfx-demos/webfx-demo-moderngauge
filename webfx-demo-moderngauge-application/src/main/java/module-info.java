@@ -5,6 +5,7 @@ module webfx.demo.moderngauge.application {
     // Direct dependencies modules
     requires javafx.controls;
     requires javafx.graphics;
+    requires webfx.kit.util.scene;
     requires webfx.lib.medusa;
     requires webfx.platform.scheduler;
 

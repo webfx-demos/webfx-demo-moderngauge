@@ -1,5 +1,6 @@
 package dev.webfx.demo.moderngauge;
 
+import dev.webfx.kit.util.scene.DeviceSceneUtil;
 import eu.hansolo.medusa.Gauge;
 import eu.hansolo.medusa.GaugeBuilder;
 import javafx.application.Application;
@@ -32,7 +33,7 @@ public final class ModernGaugeApplication extends Application {
                 .build();
         StackPane root = new StackPane(gauge);
         root.setBackground(new Background(new BackgroundFill(Color.BLACK, CornerRadii.EMPTY, Insets.EMPTY)));
-        Scene scene = new Scene(root,800, 600);
+        Scene scene = DeviceSceneUtil.newScene(root,800, 600);
         stage.setScene(scene);
         stage.setTitle("Modern Gauge");
         stage.show();
