@@ -33,7 +33,7 @@ public final class ModernGaugeApplication extends Application {
                 .build();
         StackPane root = new StackPane(gauge);
         root.setBackground(new Background(new BackgroundFill(Color.BLACK, CornerRadii.EMPTY, Insets.EMPTY)));
-        Scene scene = DeviceSceneUtil.newScene(root,800, 600);
+        Scene scene = DeviceSceneUtil.newScene(root, 800, 600, Color.BLACK);
         stage.setScene(scene);
         stage.setTitle("Modern Gauge");
         stage.show();
