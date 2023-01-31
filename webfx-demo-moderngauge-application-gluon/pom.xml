@@ -84,6 +84,8 @@
                     </resourcesList>
                     <appIdentifier>dev.webfx.demo.moderngauge</appIdentifier>
                     <releaseConfiguration>
+                        <!-- macOS/iOS -->
+                        <bundleName>Modern gauge</bundleName>
                         <!-- Android -->
                         <appLabel>Modern gauge</appLabel>
                     </releaseConfiguration>
