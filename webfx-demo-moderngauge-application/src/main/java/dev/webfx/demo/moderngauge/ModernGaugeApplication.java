@@ -15,6 +15,7 @@ import javafx.beans.value.WritableValue;
 import javafx.geometry.HPos;
 import javafx.geometry.Orientation;
 import javafx.geometry.VPos;
+import javafx.scene.Cursor;
 import javafx.scene.Scene;
 import javafx.scene.control.Slider;
 import javafx.scene.effect.DropShadow;
@@ -22,6 +23,7 @@ import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
@@ -57,6 +59,8 @@ public final class ModernGaugeApplication extends Application {
 
         // This improves slider performance on low devices (reduce click target possibilities)
         gauge.setMouseTransparent(true);
+        Rectangle clip = new Rectangle();
+        gauge.setClip(clip);
 
         Pane root = new Pane(gauge, clickText) {
             @Override
@@ -86,6 +90,7 @@ public final class ModernGaugeApplication extends Application {
                 }
                 valueSlider.setOrientation(so);
                 thresholdSlider.setOrientation(so);
+                clip.setWidth(gw); clip.setHeight(gh);
                 layoutInArea(clickText, 0, 0, w, h * 0.95, 0, HPos.CENTER, VPos.CENTER);
                 layoutInArea(gauge, gx, gy, gw, gh, 0, HPos.CENTER, VPos.CENTER);
                 layoutInArea(valueText, vtx, vty, tw, th, 0, HPos.CENTER, VPos.CENTER);
@@ -107,10 +112,14 @@ public final class ModernGaugeApplication extends Application {
         animateProperty(5000, clickText.opacityProperty(), 0);
 
         Scheduled scheduled = Scheduler.schedulePeriodic(1500, () -> gauge.setValue(Math.random() * gauge.getRange() + gauge.getMinValue()));
+        root.setCursor(Cursor.HAND);
         scene.setOnMouseClicked(e -> {
             scheduled.cancel();
             gauge.setAnimated(false);
-            root.getChildren().setAll(valueText, valueSlider, thresholdText, thresholdSlider, gauge);
+            root.getChildren().setAll(gauge, valueText, valueSlider, thresholdText, thresholdSlider);
+            root.setCursor(Cursor.DEFAULT);
+            valueSlider.setCursor(Cursor.HAND);
+            thresholdSlider.setCursor(Cursor.HAND);
         });
     }
 
