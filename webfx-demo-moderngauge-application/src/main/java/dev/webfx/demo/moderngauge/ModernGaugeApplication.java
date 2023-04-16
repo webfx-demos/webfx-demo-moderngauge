@@ -67,6 +67,9 @@ public final class ModernGaugeApplication extends Application {
             public void layoutChildren() {
                 double w = getWidth(), h = getHeight(), vtx, vty, vsx, vsy, ttx, tty, tsx, tsy, tw, th, sw, sh, gx, gy, gw, gh;
                 Orientation so;
+                Font textFont = Font.font("Verdana", Math.min(w, h) * 0.05);
+                valueText.setFont(textFont);
+                thresholdText.setFont(textFont);
                 tw = thresholdText.getLayoutBounds().getWidth() * 1.2;
                 if (w >= 1.3 * h) {
                     so = Orientation.VERTICAL; // Sliders orientation
@@ -126,7 +129,6 @@ public final class ModernGaugeApplication extends Application {
     private Text createText(String s) {
         Text text = new Text(s);
         text.setFill(Color.WHITE);
-        text.setFont(Font.font("Verdana", 28));
         return text;
     }
 
