@@ -12,7 +12,7 @@ module webfx.demo.moderngauge.application.gluon {
     requires webfx.platform.scheduler.java;
     requires webfx.platform.shutdown.gluon;
 
-    // Meta Resource package
+    // Resources packages
     opens dev.webfx.platform.meta.exe;
 
 }

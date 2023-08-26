@@ -80,7 +80,7 @@
                     </attachList>
                     <resourcesList>
                         <list>dev/webfx/platform/meta/exe/[^/]+$</list>
-                        <list>images/checkbox/[^/]+$</list>
+                        <list>javafx/scene/control/skin/checkbox/[^/]+$</list>
                     </resourcesList>
                     <appIdentifier>dev.webfx.demo.moderngauge</appIdentifier>
                     <releaseConfiguration>
