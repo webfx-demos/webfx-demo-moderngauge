@@ -52,6 +52,7 @@
     <source path="dev/webfx/kit/mapper/spi/impl/base"/>
     <source path="javafx/animation"/>
     <source path="javafx/application"/>
+    <source path="javafx/concurrent"/>
     <source path="javafx/css"/>
     <source path="javafx/geometry"/>
     <source path="javafx/scene"/>
@@ -125,11 +126,13 @@
     <!--===========================< webfx-platform-console-gwt >===========================-->
     <source path="dev/webfx/platform/console/spi/impl/gwt"/>
     <!--========================< webfx-platform-javabase-emul-gwt >========================-->
+    <super-source includes="java/io/" path=""/>
     <super-source includes="java/lang/ref/" path=""/>
     <super-source includes="java/net/" path=""/>
     <super-source includes="java/util/" path=""/>
     <super-source includes="java/util/function/" path=""/>
     <super-source includes="java/util/regex/" path=""/>
+    <super-source includes="netscape/javascript/" path=""/>
     <!--==============================< webfx-platform-meta >===============================-->
     <source path="dev/webfx/platform/meta"/>
     <!--===============================< webfx-platform-os >================================-->
@@ -163,6 +166,13 @@
     <source path="dev/webfx/platform/util/collection"/>
     <source path="dev/webfx/platform/util/function"/>
     <source path="dev/webfx/platform/util/keyobject"/>
+    <source path="dev/webfx/platform/util/keyobject/formatter"/>
+    <source path="dev/webfx/platform/util/keyobject/formatter/spi"/>
+    <source path="dev/webfx/platform/util/keyobject/impl"/>
+    <source path="dev/webfx/platform/util/keyobject/impl/listmap"/>
+    <source path="dev/webfx/platform/util/keyobject/parser"/>
+    <source path="dev/webfx/platform/util/keyobject/parser/spi"/>
+    <source path="dev/webfx/platform/util/keyobject/parser/spi/impl/properties"/>
     <source path="dev/webfx/platform/util/serviceloader"/>
     <source path="dev/webfx/platform/util/tuples"/>
     <source path="dev/webfx/platform/util/uuid"/>
