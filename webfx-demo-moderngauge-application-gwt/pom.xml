@@ -39,11 +39,6 @@
         </dependency>
 
         <dependency>
-            <groupId>com.google.elemental2</groupId>
-            <artifactId>elemental2-svg</artifactId>
-        </dependency>
-
-        <dependency>
             <groupId>org.gwtproject</groupId>
             <artifactId>gwt-dev</artifactId>
         </dependency>
@@ -68,13 +63,6 @@
 
         <dependency>
             <groupId>dev.webfx</groupId>
-            <artifactId>webfx-kit-gwt</artifactId>
-            <version>0.1.0-SNAPSHOT</version>
-            <classifier>sources</classifier>
-        </dependency>
-
-        <dependency>
-            <groupId>dev.webfx</groupId>
             <artifactId>webfx-kit-javafxcontrols-peers-base</artifactId>
             <version>0.1.0-SNAPSHOT</version>
             <classifier>sources</classifier>
@@ -82,14 +70,21 @@
 
         <dependency>
             <groupId>dev.webfx</groupId>
-            <artifactId>webfx-kit-javafxcontrols-peers-gwt</artifactId>
+            <artifactId>webfx-kit-javafxcontrols-peers-gwt-j2cl</artifactId>
             <version>0.1.0-SNAPSHOT</version>
             <classifier>sources</classifier>
         </dependency>
 
         <dependency>
             <groupId>dev.webfx</groupId>
-            <artifactId>webfx-kit-javafxcontrols-registry-gwt</artifactId>
+            <artifactId>webfx-kit-javafxcontrols-registry-gwt-j2cl</artifactId>
+            <version>0.1.0-SNAPSHOT</version>
+            <classifier>sources</classifier>
+        </dependency>
+
+        <dependency>
+            <groupId>dev.webfx</groupId>
+            <artifactId>webfx-kit-javafxgraphics-gwt-j2cl</artifactId>
             <version>0.1.0-SNAPSHOT</version>
             <classifier>sources</classifier>
         </dependency>
@@ -110,14 +105,14 @@
 
         <dependency>
             <groupId>dev.webfx</groupId>
-            <artifactId>webfx-kit-javafxgraphics-peers-gwt</artifactId>
+            <artifactId>webfx-kit-javafxgraphics-peers-gwt-j2cl</artifactId>
             <version>0.1.0-SNAPSHOT</version>
             <classifier>sources</classifier>
         </dependency>
 
         <dependency>
             <groupId>dev.webfx</groupId>
-            <artifactId>webfx-kit-javafxgraphics-registry-gwt</artifactId>
+            <artifactId>webfx-kit-javafxgraphics-registry-gwt-j2cl</artifactId>
             <version>0.1.0-SNAPSHOT</version>
             <classifier>sources</classifier>
         </dependency>
@@ -173,7 +168,7 @@
 
         <dependency>
             <groupId>dev.webfx</groupId>
-            <artifactId>webfx-platform-console-gwt</artifactId>
+            <artifactId>webfx-platform-console-gwt-j2cl</artifactId>
             <version>0.1.0-SNAPSHOT</version>
             <classifier>sources</classifier>
         </dependency>
@@ -183,6 +178,13 @@
             <artifactId>webfx-platform-javabase-emul-gwt</artifactId>
             <version>0.1.0-SNAPSHOT</version>
             <classifier>shaded-sources</classifier>
+        </dependency>
+
+        <dependency>
+            <groupId>dev.webfx</groupId>
+            <artifactId>webfx-platform-javabase-emul-j2cl</artifactId>
+            <version>0.1.0-SNAPSHOT</version>
+            <classifier>sources</classifier>
         </dependency>
 
         <dependency>
@@ -201,7 +203,7 @@
 
         <dependency>
             <groupId>dev.webfx</groupId>
-            <artifactId>webfx-platform-os-gwt</artifactId>
+            <artifactId>webfx-platform-os-gwt-j2cl</artifactId>
             <version>0.1.0-SNAPSHOT</version>
             <classifier>sources</classifier>
         </dependency>
@@ -236,7 +238,7 @@
 
         <dependency>
             <groupId>dev.webfx</groupId>
-            <artifactId>webfx-platform-shutdown-gwt</artifactId>
+            <artifactId>webfx-platform-shutdown-gwt-j2cl</artifactId>
             <version>0.1.0-SNAPSHOT</version>
             <classifier>sources</classifier>
         </dependency>
@@ -250,7 +252,21 @@
 
         <dependency>
             <groupId>dev.webfx</groupId>
-            <artifactId>webfx-platform-uischeduler-gwt</artifactId>
+            <artifactId>webfx-platform-uischeduler-gwt-j2cl</artifactId>
+            <version>0.1.0-SNAPSHOT</version>
+            <classifier>sources</classifier>
+        </dependency>
+
+        <dependency>
+            <groupId>dev.webfx</groupId>
+            <artifactId>webfx-platform-useragent</artifactId>
+            <version>0.1.0-SNAPSHOT</version>
+            <classifier>sources</classifier>
+        </dependency>
+
+        <dependency>
+            <groupId>dev.webfx</groupId>
+            <artifactId>webfx-platform-useragent-gwt-j2cl</artifactId>
             <version>0.1.0-SNAPSHOT</version>
             <classifier>sources</classifier>
         </dependency>

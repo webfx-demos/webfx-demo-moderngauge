@@ -25,7 +25,7 @@
 
         <dependency>
             <groupId>dev.webfx</groupId>
-            <artifactId>webfx-kit-openjfx</artifactId>
+            <artifactId>webfx-kit-javafxgraphics-openjfx</artifactId>
             <version>0.1.0-SNAPSHOT</version>
         </dependency>
 
@@ -79,7 +79,6 @@
                         <list>util</list>
                     </attachList>
                     <resourcesList>
-                        <list>dev/webfx/platform/conf/[^/]+$</list>
                         <list>dev/webfx/platform/meta/exe/[^/]+$</list>
                         <list>javafx/scene/control/skin/checkbox/[^/]+$</list>
                     </resourcesList>

@@ -4,7 +4,7 @@ module webfx.demo.moderngauge.application.openjfx {
 
     // Direct dependencies modules
     requires webfx.demo.moderngauge.application;
-    requires webfx.kit.openjfx;
+    requires webfx.kit.javafxgraphics.openjfx;
     requires webfx.platform.boot.java;
     requires webfx.platform.console.java;
     requires webfx.platform.os.java;
