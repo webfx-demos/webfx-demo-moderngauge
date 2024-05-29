@@ -89,7 +89,6 @@
                         <!-- Android -->
                         <appLabel>Modern gauge</appLabel>
                     </releaseConfiguration>
-
                 </configuration>
             </plugin>
         </plugins>
