@@ -7,9 +7,9 @@ module webfx.demo.moderngauge.application.openjfx {
     requires webfx.kit.javafxgraphics.openjfx;
     requires webfx.platform.boot.java;
     requires webfx.platform.console.java;
-    requires webfx.platform.os.java;
-    requires webfx.platform.resource.java;
-    requires webfx.platform.scheduler.java;
-    requires webfx.platform.shutdown.java;
+    requires webfx.platform.os.jre;
+    requires webfx.platform.resource.jre;
+    requires webfx.platform.scheduler.jre;
+    requires webfx.platform.shutdown.jre;
 
 }
