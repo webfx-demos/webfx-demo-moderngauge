@@ -89,7 +89,7 @@
     <!--======================< webfx-kit-javafxcontrols-peers-base >=======================-->
     <source path="dev/webfx/kit/mapper/peers/javafxcontrols/base"/>
     <!--===================< webfx-kit-javafxcontrols-peers-elemental2 >====================-->
-    <source path="dev/webfx/kit/mapper/peers/javafxcontrols/gwtj2cl/html"/>
+    <source path="dev/webfx/kit/mapper/peers/javafxcontrols/elemental2/html"/>
     <!--==================< webfx-kit-javafxcontrols-registry-elemental2 >==================-->
     <source path="dev/webfx/kit/registry/javafxcontrols"/>
     <!--======================< webfx-kit-javafxgraphics-elemental2 >=======================-->
@@ -112,6 +112,10 @@
     <source path="dev/webfx/kit/launcher"/>
     <source path="dev/webfx/kit/launcher/spi"/>
     <source path="dev/webfx/kit/launcher/spi/impl/base"/>
+    <!--=================< webfx-kit-perfectscrollbar-elemental2-gwt-j2cl >=================-->
+    <source path="dev/webfx/kit/perfectscrollbar/elemental2"/>
+    <resource path="dev/webfx/kit/perfectscrollbar"/>
+    <public path="" includes="dev/webfx/kit/perfectscrollbar/"/>
     <!--=================================< webfx-kit-util >=================================-->
     <source path="dev/webfx/kit/util/properties"/>
     <source path="dev/webfx/kit/util/properties/conversion"/>

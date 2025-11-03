@@ -1,6 +1,7 @@
 package dev.webfx.demo.moderngauge;
 
 import dev.webfx.kit.util.scene.DeviceSceneUtil;
+import dev.webfx.platform.console.Console;
 import dev.webfx.platform.os.OperatingSystem;
 import dev.webfx.platform.scheduler.Scheduled;
 import dev.webfx.platform.scheduler.Scheduler;

@@ -8,6 +8,7 @@ module webfx.demo.moderngauge.application {
     requires javafx.graphics;
     requires webfx.kit.util.scene;
     requires webfx.lib.medusa;
+    requires webfx.platform.console;
     requires webfx.platform.os;
     requires webfx.platform.scheduler;
 
