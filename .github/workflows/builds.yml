@@ -33,7 +33,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        app: [{name: 'ModernGauge', module-token: 'webfx-demo-moderngauge', gwt-token: 'webfx_demo_moderngauge', gluon-token: 'WebFXDemoModerngauge', gwt-push-branch: 'moderngauge', teavm-push-branch: 'moderngauge-teavm', teavm-wasm-push-branch: 'moderngauge-wasm', android-package-name: 'dev.webfx.demo.moderngauge', android-track: 'beta', ios-bundle-id: 'dev.webfx.demo.moderngauge', version: '0.1.0-SNAPSHOT'}]
+        app: [{name: 'ModernGauge', module-token: 'webfx-demo-moderngauge', gwt-token: 'webfx_demo_moderngauge', gluon-token: 'WebFXDemoModerngauge', gwt-push-branch: 'moderngauge', teavm-js-push-branch: 'moderngauge-teavm', teavm-wasm-push-branch: 'moderngauge-wasm', android-package-name: 'dev.webfx.demo.moderngauge', android-track: 'beta', ios-bundle-id: 'dev.webfx.demo.moderngauge', version: '0.1.0-SNAPSHOT'}]
         os-config:  [1]
         include:
           - os-config: 1 # Generates builds 1) 2) 3) 4) & 5)
@@ -57,8 +57,8 @@ jobs:
       app-gwt-build-dir:         ./${{ matrix.app.module-token }}-application-gwt/target/${{ matrix.app.module-token }}-application-gwt-${{ matrix.app.version }}/${{ matrix.app.gwt-token }}_application_gwt
       app-j2cl-module-dir:       ./${{ matrix.app.module-token }}-application-j2cl
       app-j2cl-build-dir:        ./${{ matrix.app.module-token }}-application-j2cl/target/${{ matrix.app.module-token }}-application-j2cl-${{ matrix.app.version }}/${{ matrix.app.module-token }}-application-j2cl
-      app-teavm-module-dir:      ./${{ matrix.app.module-token }}-application-teavm
-      app-teavm-build-dir:       ./${{ matrix.app.module-token }}-application-teavm/target/${{ matrix.app.module-token }}-application-teavm-${{ matrix.app.version }}
+      app-teavm-js-module-dir:   ./${{ matrix.app.module-token }}-application-teavm-js
+      app-teavm-js-build-dir:    ./${{ matrix.app.module-token }}-application-teavm-js/target/${{ matrix.app.module-token }}-application-teavm-js-${{ matrix.app.version }}
       app-teavm-wasm-module-dir: ./${{ matrix.app.module-token }}-application-teavm-wasm
       app-teavm-wasm-build-dir:  ./${{ matrix.app.module-token }}-application-teavm-wasm/target/${{ matrix.app.module-token }}-application-teavm-wasm-${{ matrix.app.version }}
       app-gluon-module-dir:      ./${{ matrix.app.module-token }}-application-gluon
@@ -159,9 +159,9 @@ jobs:
         working-directory: ${{ env.app-parent-module-dir }}
 
       # Building TeaVM application (if required)
-      - if: matrix.teavm-artifact-suffix != null || matrix.app.teavm-push-branch != null && matrix.os-config == 1  || matrix.app.teavm-wasm-push-branch != null && matrix.os-config == 1
-        name: Build TeaVM application
-        run: ${{ matrix.MVN }} -B -Pteavm,production package
+      - if: matrix.teavm-artifact-suffix != null || matrix.app.teavm-js-push-branch != null && matrix.os-config == 1  || matrix.app.teavm-wasm-push-branch != null && matrix.os-config == 1
+        name: Build TeaVM application (JS and/or WASM)
+        run: ${{ matrix.MVN }} -B -Pteavm-js,teavm-wasm,production package
         working-directory: ${{ env.app-parent-module-dir }}
 
       # Building OpenJFX fat jar and installers (if required)
@@ -201,16 +201,16 @@ jobs:
           destination-github-username: ${{ env.web-push-username }}
           user-email: ${{ env.web-push-email }}
 
-      - if: matrix.os-config == 1 && matrix.app.teavm-push-branch != null && env.API_GITHUB_TOKEN != ''
-        name: Push TeaVM JS build to ${{ matrix.app.teavm-push-branch }} branch
+      - if: matrix.os-config == 1 && matrix.app.teavm-js-push-branch != null && env.API_GITHUB_TOKEN != ''
+        name: Push TeaVM JS build to ${{ matrix.app.teavm-js-push-branch }} branch
         uses: cpina/github-action-push-to-another-repository@master
         env:
           API_TOKEN_GITHUB: ${{ env.API_GITHUB_TOKEN }}
         with:
-          source-directory: ${{ env.app-teavm-build-dir }}
+          source-directory: ${{ env.app-teavm-js-build-dir }}
           destination-repository-username: ${{ env.web-push-repository-owner }}
           destination-repository-name: ${{ env.web-push-repository-name }}
-          target-branch: ${{ matrix.app.teavm-push-branch }}
+          target-branch: ${{ matrix.app.teavm-js-push-branch }}
           destination-github-username: ${{ env.web-push-username }}
           user-email: ${{ env.web-push-email }}
 
