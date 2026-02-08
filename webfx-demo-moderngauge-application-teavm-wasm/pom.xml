@@ -84,9 +84,10 @@
 
     </dependencies>
 
+    <!-- Unpacking all resources for this web archive, but only when the user activates the teavm-wasm profile -->
     <profiles>
         <profile>
-            <id>teavm</id>
+            <id>teavm-wasm</id>
             <build>
                 <plugins>
                     <plugin>

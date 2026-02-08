@@ -84,9 +84,10 @@
 
     </dependencies>
 
+    <!-- Unpacking all resources for this web archive, but only when the user activates the teavm-js profile -->
     <profiles>
         <profile>
-            <id>teavm</id>
+            <id>teavm-js</id>
             <build>
                 <plugins>
                     <plugin>
